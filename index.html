@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .contenedor-flexible {
+            display: flex;
+            height: 100vh;
+        }
+
+        .elemento-flexible {
+            font-size: 5rem;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10px;
+        }
+
+        .uno {
+            background-color: red;
+            flex: 1;
+            background-image: url('uno.jpg');
+        }
+
+        .contenedor-dos-tres {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .dos {
+            background-color: blue;
+            flex: 1;
+            background-image: url('dos.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tres {
+            background-color: green;
+            flex: 1;
+            background-image: url('tres.jpg');
+            background-size: cover;
+            background-position: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor-flexible">
+        <div class="elemento-flexible uno">1</div>
+        <div class="contenedor-dos-tres">
+            <div class="elemento-flexible dos">2</div>
+            <div class="elemento-flexible tres">3</div>
+        </div>
+    </div>
+</body>
+
+</html>
